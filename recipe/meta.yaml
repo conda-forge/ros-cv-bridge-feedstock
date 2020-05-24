@@ -37,6 +37,7 @@ requirements:
     - libopencv
     - boost
     - boost-cpp
+    - console_bridge
   run:
     - ros-conda-mutex * melodic
     - ros-conda-base
@@ -47,6 +48,7 @@ requirements:
     - libopencv
     - boost
     - boost-cpp
+    - console_bridge
 
 test:
   requires:
