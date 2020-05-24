@@ -13,7 +13,7 @@ source:
     - fix_boost_opencv.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('ros-cv-bridge') }}
@@ -37,6 +37,7 @@ requirements:
     - libopencv
     - boost
     - boost-cpp
+    - console_bridge 0.4
   run:
     - ros-conda-mutex * melodic
     - ros-conda-base
@@ -47,6 +48,7 @@ requirements:
     - libopencv
     - boost
     - boost-cpp
+    - console_bridge 0.4
 
 test:
   requires:
